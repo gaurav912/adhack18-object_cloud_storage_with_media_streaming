@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CloudMix</title>
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+		.header
+		{
+			position: fixed;
+			width: 100%;
+			top: 0px;
+			background-color: black;
+			height: 55px;
+			font-size:42px;
+			color: white;
+			padding-top: 5px;
+			
+		}
+		.header a
+		{
+			float: right;
+			color: grey;
+			text-align: center;
+			text-decoration: none;
+			font-family: arial black;
+			font-size: 23px;
+			padding: 12px 15px;
+
+		}
+		.header a:hover{background-color: grey; color: white;}
+		img
+		{
+			width: 180px;
+		}
+		.login
+		{
+			min-width: 360px;
+			margin-width: 100%;
+			margin-top: 15px;
+			text-align: center;
+			padding-bottom: 60px;
+			padding-top: 60px;
+		}
+		.footer
+		{
+			background-color: black;
+			bottom: 0px;
+			position: fixed;
+			width: 100%;
+			text-align: center;
+			color: grey;
+			height: 50px;
+			
+		}
+		input[type=submit]
+		{
+			width: 350px;
+			height: 40px;
+			font-size: 20px;
+			border-radius: 15px;
+			font-family: arial black;
+			#background-color: #2CA5F2;
+			background-color:#2CE5F2;
+			cursor:pointer;
+		}
+		input[type=submit]:HOVER
+		{
+			background-color:#2CA5F2;
+			box-shadow: 5px 5px 10px 1px black;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		CloudMix
+			<a href="http://192.168.122.69/cloudmix_login.html"><b>Login</b></a>
+			<a href="http://192.168.122.69/cloudmix.html"><b>Register</b></a>
+	</div>
+	<div class="border">
+		<form action="http://192.168.122.69/cgi-bin/cloudmix_login.py" method="post">
+			<div class="login">
+				<img src="avatar.png" width="100%"><br/><br/>
+				<input type="text" name="username" placeholder="Username" required style="font-size: 25px; text-align: center;"><br/><br/>
+				<input type="password" name="password" placeholder="Password" required style="font-size: 25px; text-align: center;"><br/><br/>
+				<input type="submit" name="acc_login" value="Login" >
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<br/>Copyright © Developed By Avid learners
+	</div>
+</body>
+</html>

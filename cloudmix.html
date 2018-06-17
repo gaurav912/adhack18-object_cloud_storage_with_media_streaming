@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CloudMix</title>
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+		.header
+		{
+			background-color: black;
+			height: 55px;
+			overflow: hidden;
+			font-size:42px;
+			color: white;
+			padding-top: 5px;
+			
+		}
+		.header a
+		{
+			float: right;
+			color: grey;
+			text-align: center;
+			text-decoration: none;
+			font-family: arial black;
+			font-size: 23px;
+			padding: 12px 15px;
+
+		}
+		.header a:hover{background-color: grey; color: white;}
+		.login
+		{
+			margin-width: 100%;
+			margin-top: 15px;
+			margin-bottom: 55px;
+			text-align: center;
+			padding-bottom: 60px;
+			border:solid;
+			border-width: 1px;
+			margin-left: 400px;
+			margin-right: 400px;
+			min-width: 400px;
+			min-height: 400px;
+		}
+		.footer
+		{
+			background-color: black;
+			bottom: 0px;
+			position: fixed;
+			width: 100%;
+			text-align: center;
+			color: grey;
+			height: 50px;
+			
+		}
+		input[type=submit]
+		{
+			width: 350px;
+			height: 40px;
+			font-size: 20px;
+			border-radius: 15px;
+			font-family: arial black;
+			#background-color: #2CA5F2;
+			background-color:#2CE5F2;
+			cursor:pointer;
+			font:bold;
+		}
+		input[type=submit]:HOVER
+		{
+			background-color:#2CA5F2;
+			box-shadow: 5px 5px 10px 1px black;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		CloudMix
+			<a href="http://192.168.122.69/cloudmix_login.html"><b>Login</b></a>
+			<a href="http://192.168.122.69/cloudmix.html"><b>Register</b></a>
+	</div>
+	<div class="border">
+		<form action="http://192.168.122.69/cgi-bin/cloudmix.py" method="post">
+			<div class="login">
+				<div style="background-color: blue; font-size: 35px; font-family: algerian; color: white; height: 80px; padding-top: 25px;"><b>Register</b></div><br/><br/>
+				<input type="text" name="username" placeholder="Username" required style="font-size: 25px; text-align: center;"><br/><br/>
+				<input type="password" name="password" placeholder="Password" required style="font-size: 25px; text-align: center;"><br/><br/>
+				<input type="text" name="storage_name" placeholder="Storage Name" required style="font-size: 25px; text-align: center;"><br/><br/>
+				<input type="number" name="storage_size" placeholder="Storage Size" required style="font-size: 27px; height: 34px; text-align: center;"><br/><br/><br/>
+				<input type="submit" name="acc_create" value="Create" >
+			</div>
+		</form>
+	</div>
+	<div class="footer">
+		<br/>Copyright © Developed By Avid learners
+	</div>
+</body>
+</html>
