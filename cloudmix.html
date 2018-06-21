@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CloudMix</title>
+	<!--  css to beautify frontend -->
 	<style>
 		body
 		{
@@ -9,8 +10,8 @@
 		}
 		.header
 		{
-			background-color: black;
-			height: 55px;
+			background-color: #27ae60;
+			height: 70px;
 			overflow: hidden;
 			font-size:42px;
 			color: white;
@@ -20,12 +21,12 @@
 		.header a
 		{
 			float: right;
-			color: grey;
+			color: black;
 			text-align: center;
 			text-decoration: none;
 			font-family: arial black;
-			font-size: 23px;
-			padding: 12px 15px;
+			font-size: 18px;
+			padding: 12px 20px;
 
 		}
 		.header a:hover{background-color: grey; color: white;}
@@ -38,30 +39,30 @@
 			padding-bottom: 60px;
 			border:solid;
 			border-width: 1px;
-			margin-left: 400px;
-			margin-right: 400px;
-			min-width: 400px;
-			min-height: 400px;
+			border-color: #e74c3c;
+			margin-left: 500px;
+			display: inline-block;
+			width: 400px;
+			height: 370px;
 		}
 		.footer
 		{
-			background-color: black;
+			background-color: #2ecc71;
 			bottom: 0px;
 			position: fixed;
 			width: 100%;
 			text-align: center;
-			color: grey;
-			height: 50px;
+			color: black;
+			height: 30px;
 			
 		}
 		input[type=submit]
 		{
-			width: 350px;
+			width: 100px;
 			height: 40px;
 			font-size: 20px;
 			border-radius: 15px;
 			font-family: arial black;
-			#background-color: #2CA5F2;
 			background-color:#2CE5F2;
 			cursor:pointer;
 			font:bold;
@@ -74,25 +75,26 @@
 	</style>
 </head>
 <body>
+	<!--  Navigation panel -->
 	<div class="header">
 		CloudMix
 			<a href="http://192.168.122.69/cloudmix_login.html"><b>Login</b></a>
-			<a href="http://192.168.122.69/cloudmix.html"><b>Register</b></a>
+			<a href="http://192.168.122.69/cloudmix.html"><b>Sign Up</b></a>
 	</div>
 	<div class="border">
 		<form action="http://192.168.122.69/cgi-bin/cloudmix.py" method="post">
 			<div class="login">
-				<div style="background-color: blue; font-size: 35px; font-family: algerian; color: white; height: 80px; padding-top: 25px;"><b>Register</b></div><br/><br/>
-				<input type="text" name="username" placeholder="Username" required style="font-size: 25px; text-align: center;"><br/><br/>
-				<input type="password" name="password" placeholder="Password" required style="font-size: 25px; text-align: center;"><br/><br/>
-				<input type="text" name="storage_name" placeholder="Storage Name" required style="font-size: 25px; text-align: center;"><br/><br/>
-				<input type="number" name="storage_size" placeholder="Storage Size" required style="font-size: 27px; height: 34px; text-align: center;"><br/><br/><br/>
+				<div style="background-color: #e74c3c; font-size: 35px; font-family: algerian; color: white; height: 60px; width:400px; padding-top: 25px;"><b>Sign Up</b></div><br/><br/>
+				<input type="text" name="username" placeholder="Username" required style="font-size: 20px; text-align: center;"><br/><br/>
+				<input type="password" name="password" placeholder="Password" required style="font-size: 20px; text-align: center;"><br/><br/>
+				<input type="text" name="storage_name" placeholder="Storage Name" required style="font-size: 20px; text-align: center;"><br/><br/>
+				<input type="number" name="storage_size" placeholder="Storage Size in GB" required style="font-size: 20px; text-align: center;"><br/><br/><br/>
 				<input type="submit" name="acc_create" value="Create" >
 			</div>
 		</form>
 	</div>
 	<div class="footer">
-		<br/>Copyright © Developed By Avid learners
+		Copyright © Developed By Avid learners
 	</div>
 </body>
 </html>

@@ -21,11 +21,11 @@ print '''
 					{
 						width:100%;
 						text-align:left;
-						background-color:black;
+						background-color:#27ae60;
 						color:white;
 						position: fixed;
 						top: 0px;
-						height: 55px;
+						height: 60px;
 						font-size:42px;
 						padding-top: 5px;
 						
@@ -35,21 +35,21 @@ print '''
 						float:right;
 						font-size:23px;
 						text-decoration:none;
-						color: grey;
+						color: black;
 						text-align: center;
-						font-size: 23px;
-						padding: 12px 15px;
+						font-size: 18px;
+						padding: 12px 20px;
 					}
 					.header a:hover{background-color: grey; color: white;}
 					.footer
 					{
-						background-color: black;
+						background-color: #27ae60;
 						bottom: 0px;
 						position: fixed;
 						width: 100%;
 						text-align: center;
-						color: grey;
-						height: 50px;
+						color: black;
+						height: 30px;
 						
 					}
 					input[type=file]
@@ -89,7 +89,7 @@ print '''
 
 
 print '<div class="header">'
-print 'Cloud'
+print 'CloudMix'
 print '<a href="http://192.168.122.69/cloudmix_login.html">Log Out</a>'
 print '</div>'
 print '\n\n\n'
@@ -127,9 +127,6 @@ if signupbtn:
 			</form>
 			</div>
 
-			<div class="footer">
-			<br/>Copyright Developed By Avid learners
-			</div>
 		'''
 
 
@@ -158,14 +155,12 @@ elif loginbtn:
 			<form action="http://192.168.122.69/cgi-bin/dataview.py" method="post">
 
 			<input type="submit" name="viewdata" value="View Data">
-			<input type="radio" name="stor_name" value="'''+st_name+'''" checked style="display:none">'
+			<input type="radio" name="stor_name" value="'''+st_name+'''" checked style="display:none">
 
 			</form>
 			</div>
 
-			<div class="footer">
-			<br/>Copyright Developed By Avid learners
-			</div>
+			
 		  '''
 
 conn.close()

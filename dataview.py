@@ -22,7 +22,7 @@ def print_directory_contents(sPath):
 		contPath.append(sChildPath)
 	print "<h1 align=center>Your Data</h1>"	
 	if len(content)==0:
-		print "<h2 align=center >Is Empty Now</h2>"
+		print "<h3 align=center >No data available</h2>"
 		
 
 print_directory_contents("/var/www/html/storages/"+st_name+"/")
@@ -79,8 +79,7 @@ for i in content:
 	
 #----------------------------------------------------------------------------------------------------
 #									Streaming audio/Video
-	#execfile('clouddata.py')
-	#print '<meta http-equiv="refresh" content="0;url=http://192.168.122.28/cgi-bin/clouddata.py"/>'
+
 	print '''
 			<form action="http://192.168.122.69/cgi-bin/clouddata.py" method="post">
 
